@@ -25,10 +25,19 @@
           </ul>
         </div>
       </nav>
-      <div class="bg"></div>
+      <!--BACKGROUND IMAGE-->
+      <div class="bg valign-wrapper">
+        <div class="search-box">
+          <input type="text" class="center-align white-text searchBar" placeholder="Search Drink Here">
+        </div>
+        <div class="search-button">
+          <button onclick="hide()" class="waves-effect waves-light btn" >search</button>
+        </div>
+      </div>
+
       
         
-      <!--
+
     <div class="container hidden">
       
         <div class="row">
@@ -60,7 +69,7 @@
                 </table>   
             </h5>
             
-            <h5 class="col s12 m6 center-align hidden">
+            <h5 class="col s12 m6 center-align">
                 Recently viewed
                 <table>
                     <thead>
@@ -90,11 +99,11 @@
                 Gif<br>
                 <a href="https://placeholder.com"><img src="https://via.placeholder.com/250"></a>
             </h5>
-            <h5 class="col s12 m6 center-align hidden">
-                Joke<br>
+            <h5 class="col s12 m6 center-align">
+                A Dad Joke for you<br>
                 <div class="card medium">
                     <div class="card-content">
-                      <p>Q: What did the beaver say to the tree? <br><br> A: It was nice to gnaw you</p>
+                      <p id="randomJoke"></p>
                     </div>
                    </h5>
             </h5>
@@ -102,7 +111,11 @@
         </div>
     </div>
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
--->

@@ -1,8 +1,11 @@
 .hidden{
     display: none;
 }
+.bg{
+    display: none;
+}
 
-/*SETTING THE BACKGROUND*/
+/*SETTING THE*/
 body, html {
     height: 100%;
     margin: 0;
@@ -11,7 +14,7 @@ body, html {
   .bg {
     /* The image used */
     background-image: url("https://images.unsplash.com/photo-1556463208-f8c2505e8299?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  
+    z-index: -9;
     /* Full height */
     height: 100%; 
   
@@ -20,5 +23,14 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
-        
+
+  .search-box{
+      margin-left: auto;
+  }
+  .search-button{
+    margin-right: auto;
+    margin-left: 1%;
+}
+
+   
 
