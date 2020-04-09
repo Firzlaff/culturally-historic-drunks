@@ -132,10 +132,9 @@ function getGiphy(){
     method: "GET"
 }).then(function(giphy) {
     // variable for the URL
-    let url = giphy.data[0].embed_url;
-    console.log(url);
+    let url = giphy.data[0].images.original.url;
     // set the SRC for img for the randomGiphy id to the URL for the random Giphy
-   // randomGiphy.attr("src", url);
+    randomGiphy.attr("src", url);
 
  // randomGiphy.text(giphy.data[0].embed_url);
 
