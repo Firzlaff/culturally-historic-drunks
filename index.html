@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historic Drunks</title>
+
     <link rel="stylesheet" href="style.css">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,104 +14,154 @@
         <!-- Icon CDN from materialize-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <!--NAVBAR-->
     <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><i class="material-icons">local_drink</i>Historic Drunks</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html"><i class="material-icons">search</i></a></li>
-            <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
-            <li><a href="index.html"><i class="material-icons">more_vert</i></a></li>
-          </ul>
-        </div>
-      </nav>
-      <!--BACKGROUND IMAGE-->
-      <div class="bg valign-wrapper">
-        <div class="search-box">
-          <input type="text" class="center-align white-text searchBar" placeholder="Search Drink Here">
-        </div>
-        <div class="search-button">
-          <button onclick="hide()" class="waves-effect waves-light btn" >search</button>
-        </div>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><i class="material-icons">local_drink</i>Historic Drunks</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html"><i class="material-icons">search</i></a></li>
+          <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+          <li><a href="index.html"><i class="material-icons">more_vert</i></a></li>
+        </ul>
       </div>
+    </nav>
+    <!--BACKGROUND IMAGE-->
+    <div class="bg valign-wrapper">
+      <div class="search-box">
+        <input class="form-control center-align white-text" type="text" id="search-value" placeholder="Search Drink Here"><br> 
+      </div>
+      <div class="search-button">
+        <form class="form-inline my-2 my-lg-0" id="search-box">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
+              
+      </form>
+  
+      </div>
+    </div>
 
+    
       
-        
 
-    <div class="container hidden">
+  <div class="container">
+    
+      <div class="row">
+          <h4 class="col s12 m12 center-align">Culturally Historic Drunks</h4>
+          <h5 class="col s12 m6 center-align">
+              List of drinks
+              <table>
+                  <thead>
+                      <tr class=>
+                        <th>Drink</th>
+                        <th>Ingredients</th>
+                      </tr>
+                  </thead>
       
-        <div class="row">
-            <h4 class="col s12 m12 center-align">Culturally Historic Drunks</h4>
-            <h5 class="col s12 m6 center-align">
-                List of drinks
-                <table>
-                    <thead>
-                        <tr class=>
-                          <th>Drink</th>
-                          <th>Ingredients</th>
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                    </tbody>
-                </table>   
-            </h5>
-            
-            <h5 class="col s12 m6 center-align">
-                Recently viewed
-                <table>
-                    <thead>
-                        <tr class=>
-                          <th>Drink</th>
-                          <th>Ingredients</th>
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                      <tr>
-                        <td>????</td>
-                        <td>????</td>
-                      </tr>
-                    </tbody>
-                </table>   
-            </h5>
-            <h5 class="col s12 m6 center-align hidden">
-                Gif<br>
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/250"></a>
-            </h5>
-            <h5 class="col s12 m6 center-align">
-                A Dad Joke for you<br>
-                <div class="card medium">
-                    <div class="card-content">
-                      <p id="randomJoke"></p>
-                    </div>
-                   </h5>
-            </h5>
-            
+                  <tbody>
+                    <tr>
+                      <td>????</td>
+                      <td>????</td>
+                    </tr>
+                    <tr>
+                      <td>????</td>
+                      <td>????</td>
+                    </tr>
+                    <tr>
+                      <td>????</td>
+                      <td>????</td>
+                    </tr>
+                  </tbody>
+              </table>   
+          </h5>
+          
+          <h5 class="col s12 m6 center-align">
+              ingredients and measurements:
+              <table>
+                  <thead>
+                  </thead>
+      
+                  <tbody>
+                    <tr>
+                      <div class="row">
+                            <div id="ingredients"></div>
+                            
+                            <div class="recipe"></div>
+                            <div class="recipe1"></div>
+                            <div class="recipe2"></div>
+                            <div class="recipe3"></div>
+                            <div class="recipe4"></div>
+                            <div class="recipe5"></div>
+                            <div class="recipe6"></div>
+                            <div class="recipe7"></div>
+                            <div class="recipe8"></div>
+                            <div class="recipe9"></div>
+                            <div class="recipe10"></div>
+                            </div>
+                  </tbody>
+              </table>   
+          </h5>
+          <h5 class="col s12 m6 center-align hidden">
+              Gif<br>
+              <a href="https://placeholder.com"><img src="https://via.placeholder.com/250"></a>
+          </h5>
+          <h5 class="col s12 m6 center-align">
+              A Dad Joke for you<br>
+              <div class="card medium">
+                  <div class="card-content">
+                    <p id="randomJoke"></p>
+                  </div>
+                 </h5>
+          </h5>
+          
+      </div>
+  </div>
+    <h1>Culturally Historic Drunks</h1>
+
+    <h2>Drinks</h2>
+
+    
+    <div id="Drinks">
+       
+        <h1 class="drink-name" id="name"></h1>
+ 
+    </div>
+
+    <div id="instructions">
+        <p>Mixing Instructions:</p>
+        <div class="drink-instructions">
         </div>
     </div>
+
+    <div class="container">
+        
+    
+            <div class="col-sm-">
+             <div id="Measurements">
+            <p>How much to use</p>
+            <div class="measure"></div>
+            <div class="measure1"></div>
+            <div class="measure2"></div>
+            <div class="measure3"></div>
+            <div class="measure4"></div>
+            <div class="measure5"></div>
+            <div class="measure6"></div>
+            <div class="measure7"></div>
+            <div class="measure8"></div>
+            <div class="measure9"></div>
+            <div class="measure10"></div>
+            </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="container" id="drink-image">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
     <script
@@ -118,4 +170,5 @@
       crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
