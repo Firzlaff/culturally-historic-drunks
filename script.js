@@ -125,7 +125,7 @@ let randomGiphy = $("#randomGiphy");
 
 function getGiphy(){
 // query URL with search parmiters of 1 random pg13 drinking giphy 
-    let queryURL = "https://api.giphy.com/v1/gifs/search?api_key=fHopE6OTtcSDNcxudBz842qXlNhvPEvz&q=drinking&limit=1&offset=0&rating=PG-13&lang=en";
+    let queryURL = "https://api.giphy.com/v1/gifs/search?api_key=fHopE6OTtcSDNcxudBz842qXlNhvPEvz&q=drinking&limit=10&offset=0&rating=PG-13&lang=en";
 //Ajax call for Giphyy to pull the above 1 random giphy for app
   $.ajax({
     url: queryURL,
