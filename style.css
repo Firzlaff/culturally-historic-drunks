@@ -1,3 +1,19 @@
 body{
-    
+    background-image: url ("https://www.google.com/imgres?imgurl=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Ffloweraura-blog-img%2Fpeople-at-newYear%2FCover-Photo.jpg&imgrefurl=https%3A%2F%2Fwww.floweraura.com%2Fblog%2Ftypes-people-new-years-party&tbnid=fEU81ucXtSgTrM&vet=12ahUKEwjBgPurrc_oAhX1cc0KHY4zC5kQMygBegUIARCgAg..i&docid=lDyrOF04rwTMOM&w=800&h=400&q=people%20at%20a%20party&hl=en&ved=2ahUKEwjBgPurrc_oAhX1cc0KHY4zC5kQMygBegUIARCgAg");
+  
+}
+h1 {
+    color:red;
+}
+p {
+color: blue;
+font-size: 22px;
+}
+
+#Measurements {
+    color: red;
+}
+p {
+      color: blue;
+      font-size: 24px;
 }
