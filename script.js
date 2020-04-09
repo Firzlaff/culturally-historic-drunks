@@ -1,10 +1,9 @@
+
 //Search cocktail by name
 //https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
 $(document).ready(function () {
  
- 
-  
     $('#search-button').on("click", function (event) {
       event.preventDefault();
       console.log("clicked");
@@ -102,4 +101,28 @@ $(document).ready(function () {
 
  };
 
+  //HTML node for random joke
+let randomJoke = $("#randomJoke");
+
+function getJoke(){
+
+    // Performing our AJAX GET request call to icanhazdadjoke
+    $.ajax({
+        url: "https://icanhazdadjoke.com/",
+        headers: {Accept: "application/json"},
+        method: "GET"
+        }).then(function(response) {
+            //set the text to the Random Joke text
+            randomJoke.text(response.joke);
+           
+        })
+
+}
+
+getJoke()
+  
+  
+  
 });
+
+
