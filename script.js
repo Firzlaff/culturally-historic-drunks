@@ -3,7 +3,8 @@ $(document).ready(function () {
  
     $('#search-button').on("click", function (event) {
       event.preventDefault();
-     // console.log("clicked");
+      console.log("clicked", location);
+        location.href = location.origin + location.pathname + "#searchLink"
       var searchValue = $("#search-value").val();
      // console.log(searchValue)
   
@@ -47,7 +48,7 @@ $(document).ready(function () {
      //Adds drink image
       var drinkImage = $("<img>").attr("src", response.drinks[0].strDrinkThumb);
 
-     $("#drink-image").append(drinkImage);
+     $("#drink-image").html(drinkImage);
      
      
 
