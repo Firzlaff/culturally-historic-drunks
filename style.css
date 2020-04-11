@@ -1,9 +1,3 @@
-.hidden{
-    display: none;
-}
-.bg{
-    display: none;
-}
 
 /*SETTING THE*/
 body, html {
@@ -31,20 +25,38 @@ body, html {
     margin-right: auto;
     margin-left: 1%;
 }
-
-   
-
-body{
-    background-image: url ("https://www.google.com/imgres?imgurl=https%3A%2F%2Fs3.ap-south-1.amazonaws.com%2Ffloweraura-blog-img%2Fpeople-at-newYear%2FCover-Photo.jpg&imgrefurl=https%3A%2F%2Fwww.floweraura.com%2Fblog%2Ftypes-people-new-years-party&tbnid=fEU81ucXtSgTrM&vet=12ahUKEwjBgPurrc_oAhX1cc0KHY4zC5kQMygBegUIARCgAg..i&docid=lDyrOF04rwTMOM&w=800&h=400&q=people%20at%20a%20party&hl=en&ved=2ahUKEwjBgPurrc_oAhX1cc0KHY4zC5kQMygBegUIARCgAg");
-  
-}
 h1 {
-    color:red;
+    color: gray;
 }
-
-#Measurements {
-    color: red;
+h2 {
+    color: gray;
+    font-size: 2.9rem;
+}
+h3 {
+    color: black;
 }
 p {
+    color: black;
       font-size: 24px;
+      margin: auto;
+}
+.card{
+color: teal;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.gif{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.brand-logo{
+    width: 100%;
+    margin-left: 1rem;
+}
+.asdf{
+    color: white;
 }

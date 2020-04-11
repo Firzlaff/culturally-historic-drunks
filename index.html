@@ -2,158 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historic Drunks</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historic Drunks</title>
 
-    <link rel="stylesheet" href="style.css">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!-- Icon CDN from materialize-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Icon CDN from materialize-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--PRIVATE STYLE SHEET-->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--NAVBAR-->
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><i class="material-icons">local_drink</i>Historic Drunks</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html"><i class="material-icons">search</i></a></li>
-          <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
-          <li><a href="index.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--BACKGROUND IMAGE-->
-    <div class="bg valign-wrapper">
-      <div class="search-box">
-        <input class="form-control center-align white-text" type="text" id="search-value" placeholder="Search Drink Here"><br> 
-      </div>
-      <div class="search-button">
-        <form class="form-inline my-2 my-lg-0" id="search-box">
-          <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
-              
-      </form>
-  
-      </div>
+  <!--NAVBAR-->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><i class="material-icons">local_drink</i>Historic Drunks</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#searchLink"><i class="material-icons">search</i></a></li>
+        <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="index.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--BACKGROUND IMAGE-->
+  <div class="bg valign-wrapper">
+    <div class="search-box">
+      <input class="form-control center-align white-text" type="text" id="search-value"
+        placeholder="Search Drink Here"><br>
     </div>
 
-    
-      
+    <!--SEARCH BAR/BUTTON-->
+    <div class="search-button">
+      <form class="form-inline my-2 my-lg-0" id="search-box">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">
+          <a href="#searchLink" class="asdf">Search</a>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <nav>
+    <div class="nav-wrapper" id="searchLink"> 
+      <a href="#!" class="brand-logo"><i class="material-icons">local_drink</i>Historic Drunks</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html"><i class="material-icons">search</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
 
   <div class="container">
-    
-
-    
-      <div class="row">
-          <h1 class="col s12 m12 center-align">Culturally Historic Drunks</h1>
 
 
 
-          <h2 class="col s12 m6 center-align card medium">
-            Drink:
-            
-            <div id="Drinks">
-       
-              <h2 class="drink-name" id="name"></h2>
-       
-          </div>
+    <div class="row">
+      <h1 class="col s12 m12 center-align">Culturally Historic Drunks</h1>
 
 
-          <h2 class="col s12 m6 center-align card medium">
-            Ingredients:
-            
-                    <div class="row">
-                          <div id="ingredients"></div>
-                          
-                          <p class="recipe"></p>
-                          <p class="recipe1"></p>
-                          <p class="recipe2"></p>
-                          <p class="recipe3"></p>
-                          <p class="recipe4"></p>
-                          <p class="recipe5"></p>
-                          <p class="recipe6"></p>
-                          <p class="recipe7"></p>
-                          <p class="recipe8"></p>
-                          <p class="recipe9"></p>
-                          <p class="recipe10"></p>
-                      </div>
+      <!--FIRST CARD WITH DRINK-->
+      <h2 class="col s12 m6 center-align card medium" >
+        Drink:
 
+        <div id="Drinks">
 
-
-
-          
-                      
-        
-
-
-
-          <h2 class="col s6 m6 center-align card medium">
-            Mixing Instructions:
-            <div id="instructions">
-            <p class="drink-instructions">
-            </p>
-        </div>
-        </h2>
-
-        <h2 class="col s12 m6 center-align card medium">
-          Measuremants:
-          <div class="col-sm-">
-           <p class="measure"></p>
-           <p class="measure1"></p>
-           <p class="measure2"></p>
-           <p class="measure3"></p>
-           <p class="measure4"></p>
-           <p class="measure5"></p>
-           <p class="measure6"></p>
-           <p class="measure7"></p>
-           <p class="measure8"></p>
-           <p class="measure9"></p>
-           <p class="measure10"></p>
-           </div>
+          <h3 class="drink-name" id="name"></h3>
       </h2>
 
+      <!--SECOND CARD WITH DRINK INGREDIENTS-->
+      <h2 class="col s12 m6 center-align card medium">
+        Mixing Instructions:
+        <div id="instructions">
+          <p class="drink-instructions">
+          </p>
+        </div>
       
+      <!--THIRD CARD WITH DRINK INGREDIENTS-->
+      <h2 class="col s12 m6 center-align card medium" >
+        Ingredients:
 
-  
+        <div class="row">
+          <div id="ingredients"></div>
+
+          <p class="recipe"></p>
+          <p class="recipe1"></p>
+          <p class="recipe2"></p>
+          <p class="recipe3"></p>
+          <p class="recipe4"></p>
+          <p class="recipe5"></p>
+          <p class="recipe6"></p>
+          <p class="recipe7"></p>
+          <p class="recipe8"></p>
+          <p class="recipe9"></p>
+          <p class="recipe10"></p>
+        </div>
+
+
+       
+        <!--FOURTH CARD WITH DRINK MEASUREMENTS-->
+        <h2 class="col s12 m6 center-align card medium" >
+          Measurements:
+          <div class="col-sm-">
+            <p class="measure"></p>
+            <p class="measure1"></p>
+            <p class="measure2"></p>
+            <p class="measure3"></p>
+            <p class="measure4"></p>
+            <p class="measure5"></p>
+            <p class="measure6"></p>
+            <p class="measure7"></p>
+            <p class="measure8"></p>
+            <p class="measure9"></p>
+            <p class="measure10"></p>
+          </div>
+        </h2>
+
+
+
+
+        <!--IMAGE OF THE DRINK-->
+        <div class="container center-align col s12 m6" id="drink-image"></div>
+
+        <!--GIF -->
+        <h2 class="col s12 m6 valign-wrapper center-align gif">
           
-      <div class="container center-align col s12 m6 center-align" id="drink-image"></div>
-
-              <h2 class="col s12 m6 center-align">
-                Gif<br>
-                <img id="randomGiphy" src="" alt="">
-              </h2>
-            </h2>
-
-          
+          <img id="randomGiphy" src="" alt="">
+        </h2>
+      </h2>
 
 
-          <h2 class="col s12 m12 center-align">
-              A Dad Joke for you<br>
-              <div class="card medium">
-                  <div class="card-content">
-                    <p id="randomJoke"></p>
-                  </div>
-          </h2>
-          
-      </div>
+
+      <!--DAD JOKE-->
+      <h2 class="col s12 m12 center-align" >
+        A Dad Joke for you<br>
+        <div class="card medium">
+          <div class="card-content">
+            <p id="randomJoke"></p>
+          </div>
+      </h2>
+
+    </div>
   </div>
-    
-
-    
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-  
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-      
-    <script src="script.js"></script>
+
+
+  <!--JAVASCRIPT LINKS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
