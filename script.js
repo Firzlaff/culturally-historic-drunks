@@ -1,7 +1,4 @@
 
-//Search cocktail by name
-//https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-
 $(document).ready(function () {
  
     $('#search-button').on("click", function (event) {
@@ -9,9 +6,11 @@ $(document).ready(function () {
       console.log("clicked", location);
         location.href = location.origin + location.pathname + "#searchLink"
       var searchValue = $("#search-value").val();
-      console.log(searchValue)
+     // console.log(searchValue)
   
       searchDrink(searchValue);
+      getJoke();
+      getGiphy();
     });
 
   function searchDrink(searchValue) {
@@ -21,23 +20,14 @@ $(document).ready(function () {
       dataType: "json",
     }).then(function (response) {
       console.log(response)
-      //var city = $("<div>");
-      //console.log(response.drinks[0].strInstructions);
-      //console.log(response.drinks[1].strInstructions);
-      //console.log(response.drinks[0].strIngredient5);
     
-
-      // if (response.drinks[0].strIngredient10 === null ) {
-      //     console.log("nope")
-      
-      //var strMeasure = (response);
-      //var strIngredient = (reponse);
-      
+            
       var drinkName = $(".drink-name").text(response.drinks[0].strDrink);
-
+      //Drink name
       $("#name").append(drinkName);
-
+      //Adds mixing instructions
       $(".drink-instructions").text(response.drinks[0].strInstructions);
+      //Adds drink ingredients
       $(".recipe").text(response.drinks[0].strIngredient1);
       $(".recipe1").text(response.drinks[0].strIngredient2);
       $(".recipe2").text(response.drinks[0].strIngredient3); 
@@ -45,61 +35,33 @@ $(document).ready(function () {
       $(".recipe4").text(response.drinks[0].strIngredient5);
       $(".recipe5").text(response.drinks[0].strIngredient6);
      
+      //Adds drink measurements
       $(".measure").text(response.drinks[0].strMeasure1);
       $(".measure1").text(response.drinks[0].strMeasure2);
       $(".measure2").text(response.drinks[0].strMeasure3); 
       $(".measure3").text(response.drinks[0].strMeasure4);
+      $(".measure4").text(response.drinks[0].strMeasure5);
+      $(".measure5").text(response.drinks[0].strMeasure6);
      
      
-     var drinkImage = $("<img>").attr("src", response.drinks[0].strDrinkThumb);
+     
+     //Adds drink image
+      var drinkImage = $("<img>").attr("src", response.drinks[0].strDrinkThumb);
 
      $("#drink-image").html(drinkImage);
      
      
 
-
-     //$("#recipe").
-
-
-
-     //$(".recipe").text(response.drinks[3].strMeasure1);
-
-      // 
-      
-      
-      // };
     
-        // if(drinks.includes(ingString)) {
-        //   ingArray.push(???)
-        // }
      
         function testString(str) {
 
         };
-        // drink.forEach(function(){
-        //   .includes(ingString)
 
          });
         
 
-    //});
-
-   // if(strIngredient === strMesasure) {
-      //         alert("yeah");
-      //      }else if (strIngredient != strMeasure)
-      //          alert("No");  
-      
-    
-    //  var drinks = (response.drinks[""].strInstructions.strIngredient.strMeasure);     
-    // for (i = 0; i < drinks.length; i++) {
-    //   if(strIngredient === strMesasure) {
-    //       alert("yeah");
-    //   }else if (strIngredient != strMeasure)
-    //       alert("No");
    
-   
-  //   };
-
  };
 
   //HTML node for random joke
@@ -113,11 +75,10 @@ function getJoke(){
         headers: {Accept: "application/json"},
         method: "GET"
         }).then(function(response) {
-            //set the text to the Random Joke text
+            //set the text to the Random Joke HTML Node
             randomJoke.text(response.joke);
            
         })
-
 }
 
 getJoke()
@@ -125,22 +86,18 @@ getJoke()
 let randomGiphy = $("#randomGiphy");
 
 function getGiphy(){
-// query URL with search parmiters of 1 random pg13 drinking giphy 
-    let queryURL = "https://api.giphy.com/v1/gifs/search?api_key=fHopE6OTtcSDNcxudBz842qXlNhvPEvz&q=drinking&limit=1&offset=0&rating=PG-13&lang=en";
-//Ajax call for Giphyy to pull the above 1 random giphy for app
+// query URL to giphy for a Random, PG-13, Drinking, Giphy
+    let queryURL = "https://api.giphy.com/v1/gifs/random?api_key=TVoFgNLmftMMHxc2WTQxG3ofywTNoKhE&tag=drinking&rating=PG-13";
+//Ajax call for Giphy to pull the above random giphy for app
   $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function(giphy) {
-    // variable for the URL
-    let url = giphy.data[0].images.original.url;
-    // set the SRC for img for the randomGiphy id to the URL for the random Giphy
+    // variable for the URL returned from the Giphy Call
+    let url = giphy.data.images.original.url;
+    // set the attribute for SRC for the targeted HTML node on the Img
     randomGiphy.attr("src", url);
-
- // randomGiphy.text(giphy.data[0].embed_url);
-
 });
-
 }
 getGiphy()
  
