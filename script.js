@@ -6,11 +6,13 @@ $(document).ready(function () {
  
     $('#search-button').on("click", function (event) {
       event.preventDefault();
-      console.log("clicked");
+     // console.log("clicked");
       var searchValue = $("#search-value").val();
-      console.log(searchValue)
+     // console.log(searchValue)
   
       searchDrink(searchValue);
+      getJoke();
+      getGiphy();
     });
 
   function searchDrink(searchValue) {
@@ -112,11 +114,10 @@ function getJoke(){
         headers: {Accept: "application/json"},
         method: "GET"
         }).then(function(response) {
-            //set the text to the Random Joke text
+            //set the text to the Random Joke HTML Node
             randomJoke.text(response.joke);
            
         })
-
 }
 
 getJoke()
@@ -124,22 +125,18 @@ getJoke()
 let randomGiphy = $("#randomGiphy");
 
 function getGiphy(){
-// query URL with search parmiters of 1 random pg13 drinking giphy 
-    let queryURL = "https://api.giphy.com/v1/gifs/search?api_key=fHopE6OTtcSDNcxudBz842qXlNhvPEvz&q=drinking&limit=10&offset=0&rating=PG-13&lang=en";
-//Ajax call for Giphyy to pull the above 1 random giphy for app
+// query URL to giphy for a Random, PG-13, Drinking, Giphy
+    let queryURL = "https://api.giphy.com/v1/gifs/random?api_key=TVoFgNLmftMMHxc2WTQxG3ofywTNoKhE&tag=drinking&rating=PG-13";
+//Ajax call for Giphy to pull the above random giphy for app
   $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function(giphy) {
-    // variable for the URL
-    let url = giphy.data[0].images.original.url;
-    // set the SRC for img for the randomGiphy id to the URL for the random Giphy
+    // variable for the URL returned from the Giphy Call
+    let url = giphy.data.images.original.url;
+    // set the attribute for SRC for the targeted HTML node on the Img
     randomGiphy.attr("src", url);
-
- // randomGiphy.text(giphy.data[0].embed_url);
-
 });
-
 }
 getGiphy()
  
