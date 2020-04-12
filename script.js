@@ -3,11 +3,10 @@ $(document).ready(function () {
  
     $('#search-button').on("click", function (event) {
       event.preventDefault();
-      console.log("clicked", location);
+     
         location.href = location.origin + location.pathname + "#searchLink"
       var searchValue = $("#search-value").val();
-     // console.log(searchValue)
-  
+    
       searchDrink(searchValue);
       getJoke();
       getGiphy();
@@ -19,7 +18,6 @@ $(document).ready(function () {
       url: `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchValue}`,
       dataType: "json",
     }).then(function (response) {
-      console.log(response)
     
             
       var drinkName = $(".drink-name").text(response.drinks[0].strDrink);
@@ -50,17 +48,8 @@ $(document).ready(function () {
 
      $("#drink-image").html(drinkImage);
      
-     
-
-    
-     
-        function testString(str) {
-
-        };
-
-         });
+      });
         
-
    
  };
 
@@ -69,7 +58,7 @@ let randomJoke = $("#randomJoke");
 
 function getJoke(){
 
-    // Performing our AJAX GET request call to icanhazdadjoke
+    // Performing our AJAX GET request call to icanhazdadjoke 
     $.ajax({
         url: "https://icanhazdadjoke.com/",
         headers: {Accept: "application/json"},
