@@ -38,11 +38,11 @@ Our App adds humor and fun with a Dad Joke and a Random Giphy
   - THis API provided us with a random pg-13 Drinking Giphy to display.    
 ​
 ### Application Contributors​
-| Contributor                                                     |     Contribution     |
-|:----------------------------------------:-----------------------| -------------------- | 
-| [Tysen](https://github.com/Firzlaff/culturally-historic-drunks) | API 2 & 3            |
-| [TJ](https://github.com/GLXEnigma/culturally-historic-drunks-1) |HTML, CSS, Materialize|
-| [Scott](https://github.com/scottmorr/culturally-historic-drunks-1)|        API 1       |
+| Contributor                                                       |     Contribution        |
+|:-----------------------------------------------------------------:| --------------------    | 
+| [Tysen](https://github.com/Firzlaff/culturally-historic-drunks)   |  API 2 & 3               |
+| [TJ](https://github.com/GLXEnigma/culturally-historic-drunks-1)   | HTML, CSS, Materialize   |
+| [Scott](https://github.com/scottmorr/culturally-historic-drunks-1)|         API 1          |
 ​
 ### Application Roadmap 
 We called ourselves Culturally Historic as we originally wanted to include the Culture and History of each drink searched. To do this we will use the WikiAPI and we plan to implement this.
