@@ -21,13 +21,13 @@ I drink with my friends often, I want to navigate to a site/app and have a nice 
 
 ### Application Features
 Our App is deployed and fully functional
-​Our App gives you the Image of the completed drink in presentation form. 
+Our App gives you the Image of the completed drink in presentation form 
 Our App gives you the mixing instructions for perfection
 Our App gives you the exact measurements and ingredients for the mixing
 Our App adds humor and fun with a Dad Joke and a Random Giphy
 
 ### Application Tech Used
-​- HTML - base for project
+- HTML - base for project
 - CSS with Materialize for Framework
 - [JQuery, JavaScript](https://jquery.com/)
 - API 1-(CocktailDB.com)
@@ -47,3 +47,4 @@ Our App adds humor and fun with a Dad Joke and a Random Giphy
 ### Application Roadmap 
 We called ourselves Culturally Historic as we originally wanted to include the Culture and History of each drink searched. To do this we will use the WikiAPI and we plan to implement this.
 We also will be adding additional navigation abilities to go back to the top, or to be able to access the search from extra places within the application. 
+We would also like to add the ingredients and measurements text color to match. 
