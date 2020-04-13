@@ -1,9 +1,11 @@
 # culturally-historic-drunks
 
 ### Screenshot of Screen 1
-<img src ="images/Page1Image.jpg" alt ="Pic of Screen 1" />
+![alt text](images/page1Image)
+
 ### Screenshot of Screen 2
 <img src ="images/Screen2Image.jpg" alt ="Pic of Screen 2" />
+
 ### Screenshot of Screen 3
 <img src ="images/Screen3Image.jpg" alt ="Pic of Screen 3" />
 ​
